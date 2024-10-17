@@ -1,0 +1,6 @@
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <label for="invoice_file">Select PDF Invoice:</label>
+    <input type="file" name="invoice_file" accept="application/pdf">
+    <button type="submit">Upload PDF</button>
+</form>
